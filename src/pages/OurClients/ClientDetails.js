@@ -7,9 +7,9 @@ import Hero from "../../components/Hero";
 import "./ClientDetails.css";
 
 function ClientDetails() {
-    const { fid } = useParams();
+    const { id } = useParams();
     const navigate = useNavigate();
-    const client = data.clientsData.find((c) => c.detailsPage.includes(fid));
+    const client = data.clientsData.find((c) => c.detailsPage.includes(id));
     const [showModal] = useState(!client);
 
     return (
