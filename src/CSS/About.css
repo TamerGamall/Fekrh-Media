@@ -1,0 +1,123 @@
+.about-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+        url("../assets/aboutusCover.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-header h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.about-header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.about-section {
+    padding: 50px 0;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.why-us {
+    background: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* تحسين عرض الصور والنصوص لجعلها متجاوبة */
+.why-us .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.why-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+    text-align: center;
+}
+
+.why-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.why-image-container:hover .why-image {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+/* تحسين النصوص */
+.why-text {
+    text-align: center;
+    padding: 15px;
+}
+
+.why-text h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.why-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* تحسين التجاوب عند العرض على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .about-header {
+        padding: 50px 15px;
+    }
+
+    .about-header h1 {
+        font-size: 32px;
+    }
+
+    .about-header p {
+        font-size: 16px;
+    }
+
+    .about-section h2,
+    .why-us h2 {
+        font-size: 28px;
+    }
+
+    .why-text h4 {
+        font-size: 20px;
+    }
+
+    .why-text p {
+        font-size: 14px;
+    }
+
+    /* تعديل ترتيب الصور لتكون تحت النصوص على الشاشات الصغيرة */
+    .why-us .row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .why-image {
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,61 @@
+.services-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: white;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card .card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-card .card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-card .card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 🛠️ تصميم متجاوب */
+@media (max-width: 768px) {
+    .service-card img {
+        height: 180px;
+    }
+
+    .service-card .card-title {
+        font-size: 18px;
+    }
+
+    .service-card .card-text {
+        font-size: 14px;
+    }
+}
